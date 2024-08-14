@@ -1,0 +1,3 @@
+[submodule "Medician-protos"]
+	path = Medician-protos
+	url = git@github.com:fazliddinX/Medician-protos.git

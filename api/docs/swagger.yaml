@@ -1,0 +1,1116 @@
+definitions:
+  healthAnalytics.AddMedicalRecordRequest:
+    properties:
+      attachments:
+        items:
+          type: string
+        type: array
+      description:
+        type: string
+      doctorId:
+        type: string
+      recordDate:
+        type: string
+      recordType:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.AllLifestyles:
+    properties:
+      lifestyles:
+        items:
+          $ref: '#/definitions/healthAnalytics.LifestyleResponse'
+        type: array
+    type: object
+  healthAnalytics.AllWearableData:
+    properties:
+      wearableData:
+        items:
+          $ref: '#/definitions/healthAnalytics.WearableDataResponse'
+        type: array
+    type: object
+  healthAnalytics.HealthRecommendation:
+    properties:
+      UpdatedAt:
+        type: string
+      createdAt:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      priority:
+        type: integer
+      recommendationType:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.HealthRecommendationReq:
+    properties:
+      description:
+        type: string
+      priority:
+        type: integer
+      recommendationType:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.Lifestyle:
+    properties:
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      recordedData:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.LifestyleResponse:
+    properties:
+      createdAt:
+        type: string
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      id:
+        type: string
+      recordedData:
+        type: string
+      updatedAt:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.Lifestyles:
+    properties:
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      recordedData:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.ListMedicalRecord:
+    properties:
+      medicalRecords:
+        items:
+          $ref: '#/definitions/healthAnalytics.MedicalRecord'
+        type: array
+    type: object
+  healthAnalytics.MedicalRecord:
+    properties:
+      attachments:
+        items:
+          type: string
+        type: array
+      createdAt:
+        type: string
+      description:
+        type: string
+      doctorId:
+        type: string
+      id:
+        type: string
+      recordDate:
+        type: string
+      recordType:
+        type: string
+      updatedAt:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.MedicalRecordID:
+    properties:
+      id:
+        type: string
+    type: object
+  healthAnalytics.MedicalRecords:
+    properties:
+      attachments:
+        items:
+          type: string
+        type: array
+      description:
+        type: string
+      doctorId:
+        type: string
+      recordDate:
+        type: string
+      recordType:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.Message:
+    properties:
+      message:
+        type: string
+    type: object
+  healthAnalytics.Monitoring:
+    properties:
+      Message:
+        type: string
+      lifestyle:
+        items:
+          $ref: '#/definitions/healthAnalytics.Lifestyles'
+        type: array
+      medRecords:
+        items:
+          $ref: '#/definitions/healthAnalytics.MedicalRecords'
+        type: array
+      wearableData:
+        items:
+          $ref: '#/definitions/healthAnalytics.WearableDates'
+        type: array
+    type: object
+  healthAnalytics.MonitoringRealTime:
+    properties:
+      Message:
+        type: string
+      lifestyle:
+        $ref: '#/definitions/healthAnalytics.Lifestyles'
+      medRecords:
+        $ref: '#/definitions/healthAnalytics.MedicalRecords'
+      wearableData:
+        $ref: '#/definitions/healthAnalytics.WearableDates'
+    type: object
+  healthAnalytics.UpdateLifestyle:
+    properties:
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      id:
+        type: string
+    type: object
+  healthAnalytics.UpdateMedicalRecordReq:
+    properties:
+      id:
+        type: string
+      recordDate:
+        type: string
+      recordType:
+        type: string
+    type: object
+  healthAnalytics.UpdateWearableDate:
+    properties:
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      deviceType:
+        type: string
+      id:
+        type: string
+    type: object
+  healthAnalytics.UserHealthRecommendation:
+    properties:
+      healthRecommends:
+        items:
+          $ref: '#/definitions/healthAnalytics.HealthRecommendationReq'
+        type: array
+    type: object
+  healthAnalytics.WearableDataResponse:
+    properties:
+      createAt:
+        type: string
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      deviceType:
+        type: string
+      id:
+        type: string
+      recordedTime:
+        type: string
+      updateAt:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.WearableDate:
+    properties:
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      deviceType:
+        type: string
+      recordedTime:
+        type: string
+      userId:
+        type: string
+    type: object
+  healthAnalytics.WearableDates:
+    properties:
+      dataType:
+        type: string
+      dataValue:
+        type: string
+      deviceType:
+        type: string
+      recordedTime:
+        type: string
+      userId:
+        type: string
+    type: object
+  models.Error:
+    properties:
+      error:
+        type: string
+    type: object
+  users.CreateUserRequest:
+    properties:
+      dataOfBirthday:
+        type: string
+      email:
+        type: string
+      firstName:
+        type: string
+      gender:
+        type: string
+      lastName:
+        type: string
+      password:
+        type: string
+      role:
+        type: string
+    type: object
+  users.CreateUserResponse:
+    properties:
+      dataOfBirthday:
+        type: string
+      email:
+        type: string
+      firstName:
+        type: string
+      gender:
+        type: string
+      id:
+        type: string
+      lastName:
+        type: string
+    type: object
+  users.GetAllUsersResponse:
+    properties:
+      users:
+        items:
+          $ref: '#/definitions/users.UserResponse'
+        type: array
+    type: object
+  users.Message:
+    properties:
+      message:
+        type: string
+    type: object
+  users.UpdateUserRequest:
+    properties:
+      Id:
+        type: string
+      LastName:
+        type: string
+      dataOfBirthday:
+        type: string
+      firstName:
+        type: string
+    type: object
+  users.UserResponse:
+    properties:
+      dataOfBirthday:
+        type: string
+      email:
+        type: string
+      firstName:
+        type: string
+      gender:
+        type: string
+      lastName:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  title: API-Gateway service
+  version: "1.0"
+paths:
+  /api/health-recommendations:
+    get:
+      consumes:
+      - application/json
+      description: Retrieves all health recommendations for the authenticated user
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.UserHealthRecommendation'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get All Health Recommendations
+      tags:
+      - HealthRecommendations
+    post:
+      consumes:
+      - application/json
+      description: Generates and adds health recommendations for the user
+      parameters:
+      - description: Health Recommendation Request
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.HealthRecommendationReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.HealthRecommendation'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Add Health Recommendation
+      tags:
+      - HealthRecommendations
+  /api/health-recommendations/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Retrieves health recommendations by ID
+      parameters:
+      - description: Health Recommendation ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.HealthRecommendation'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Health Recommendation
+      tags:
+      - HealthRecommendations
+  /api/lifestyle:
+    get:
+      consumes:
+      - application/json
+      description: Lists all lifestyle data with optional filters
+      parameters:
+      - description: Pagination limit
+        in: query
+        name: limit
+        type: string
+      - description: Pagination offset
+        in: query
+        name: offset
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.AllLifestyles'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: List Lifestyle Data
+      tags:
+      - Lifestyle
+    post:
+      consumes:
+      - application/json
+      description: Adds new lifestyle data for the user
+      parameters:
+      - description: Lifestyle Data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.Lifestyle'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.LifestyleResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Add Lifestyle Data
+      tags:
+      - Lifestyle
+  /api/lifestyle/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Deletes lifestyle data by ID
+      parameters:
+      - description: Lifestyle Data ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.Message'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Delete Lifestyle Data
+      tags:
+      - Lifestyle
+    get:
+      consumes:
+      - application/json
+      description: Retrieves lifestyle data by ID
+      parameters:
+      - description: Lifestyle Data ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.LifestyleResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Lifestyle Data
+      tags:
+      - Lifestyle
+    put:
+      consumes:
+      - application/json
+      description: Updates existing lifestyle data by ID
+      parameters:
+      - description: Lifestyle Data ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Updated Lifestyle Data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.UpdateLifestyle'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.LifestyleResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Update Lifestyle Data
+      tags:
+      - Lifestyle
+  /api/medical-records:
+    get:
+      consumes:
+      - application/json
+      description: Lists medical records based on filters
+      parameters:
+      - description: Pagination offset
+        in: query
+        name: offset
+        type: string
+      - description: Pagination limit
+        in: query
+        name: limit
+        type: string
+      - description: Description filter
+        in: query
+        name: description
+        type: string
+      - description: Doctor ID filter
+        in: query
+        name: doctor_id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.ListMedicalRecord'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: List Medical Records
+      tags:
+      - MedicalRecords
+    post:
+      consumes:
+      - application/json
+      description: Adds a new medical record
+      parameters:
+      - description: Medical Record
+        in: body
+        name: record
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.AddMedicalRecordRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.MedicalRecord'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Add Medical Record
+      tags:
+      - MedicalRecords
+  /api/medical-records/{id}:
+    delete:
+      description: Deletes a medical record by ID
+      parameters:
+      - description: Medical Record ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.MedicalRecordID'
+        "400":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Delete Medical Record
+      tags:
+      - MedicalRecords
+    get:
+      description: Retrieves a medical record by ID
+      parameters:
+      - description: Medical Record ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.MedicalRecord'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Medical Record
+      tags:
+      - MedicalRecords
+    put:
+      consumes:
+      - application/json
+      description: Updates an existing medical record
+      parameters:
+      - description: Medical Record ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Updated Medical Record
+        in: body
+        name: record
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.UpdateMedicalRecordReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.MedicalRecord'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Update Medical Record
+      tags:
+      - MedicalRecords
+  /api/monitoring/daily-summary:
+    get:
+      consumes:
+      - application/json
+      description: Retrieves a summary of daily health monitoring data
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.Monitoring'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Daily Health Summary
+      tags:
+      - Monitoring
+  /api/monitoring/realtime:
+    get:
+      consumes:
+      - application/json
+      description: Retrieves real-time health monitoring data
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.MonitoringRealTime'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Real-Time Health Monitoring
+      tags:
+      - Monitoring
+  /api/monitoring/weekly-summary:
+    get:
+      consumes:
+      - application/json
+      description: Retrieves a summary of weekly health monitoring data
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.Monitoring'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Weekly Health Summary
+      tags:
+      - Monitoring
+  /api/user:
+    delete:
+      description: Deletes the user based on JWT claims
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/users.Message'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Delete User
+      tags:
+      - User
+    get:
+      description: Retrieves the user profile based on JWT claims
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/users.UserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get User Profile
+      tags:
+      - User
+    put:
+      consumes:
+      - application/json
+      description: Updates user information based on the provided request body and
+        JWT claims
+      parameters:
+      - description: Update User Request
+        in: body
+        name: UpdateUserRequest
+        required: true
+        schema:
+          $ref: '#/definitions/users.UpdateUserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/users.UserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Update User
+      tags:
+      - User
+  /api/user/all:
+    get:
+      description: Retrieves a list of users based on query parameters
+      parameters:
+      - description: Limit the number of users returned
+        in: query
+        name: limit
+        type: string
+      - description: Offset for pagination
+        in: query
+        name: offset
+        type: string
+      - description: Filter by first name
+        in: query
+        name: firstName
+        type: string
+      - description: Filter by gender
+        in: query
+        name: gender
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/users.GetAllUsersResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get All Users
+      tags:
+      - User
+  /api/user/create:
+    post:
+      consumes:
+      - application/json
+      description: Creates a new user with the provided details
+      parameters:
+      - description: Create User Request
+        in: body
+        name: CreateUserRequest
+        required: true
+        schema:
+          $ref: '#/definitions/users.CreateUserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/users.CreateUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Create User
+      tags:
+      - User
+  /api/wearable-data:
+    get:
+      consumes:
+      - application/json
+      description: Lists all wearable data with optional filters
+      parameters:
+      - description: Pagination limit
+        in: query
+        name: limit
+        type: string
+      - description: Pagination offset
+        in: query
+        name: offset
+        type: string
+      - description: Device Type filter
+        in: query
+        name: device_type
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.AllWearableData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: List Wearable Data
+      tags:
+      - WearableData
+    post:
+      consumes:
+      - application/json
+      description: Adds new wearable data
+      parameters:
+      - description: Wearable Data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.WearableDate'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.WearableDataResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Add Wearable Data
+      tags:
+      - WearableData
+  /api/wearable-data/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Deletes wearable data by ID
+      parameters:
+      - description: Wearable Data ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.Message'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Delete Wearable Data
+      tags:
+      - WearableData
+    get:
+      consumes:
+      - application/json
+      description: Retrieves wearable data by ID
+      parameters:
+      - description: Wearable Data ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.WearableDataResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Get Wearable Data
+      tags:
+      - WearableData
+    put:
+      consumes:
+      - application/json
+      description: Updates existing wearable data by ID
+      parameters:
+      - description: Wearable Data ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Updated Wearable Data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/healthAnalytics.UpdateWearableDate'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/healthAnalytics.WearableDataResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+      summary: Update Wearable Data
+      tags:
+      - WearableData
+schemes:
+- http
+swagger: "2.0"

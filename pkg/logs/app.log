@@ -1,0 +1,67 @@
+{"time":"2024-08-10T14:14:14.886235484+05:00","level":"ERROR","msg":"Error connecting to database","error":"pq: database \"medcian_auth\" does not exist"}
+{"time":"2024-08-10T14:34:52.071126244+05:00","level":"ERROR","msg":"Error login user","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:34:52.071621175+05:00","level":"ERROR","msg":"Error in AuthService.Login","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:39:27.100934226+05:00","level":"ERROR","msg":"Error registering user","error":"pq: invalid input value for enum gender: \"string\""}
+{"time":"2024-08-10T14:39:27.100985996+05:00","level":"ERROR","msg":"Error in AuthService.Register","error":"pq: invalid input value for enum gender: \"string\""}
+{"time":"2024-08-10T14:39:48.023474446+05:00","level":"ERROR","msg":"Error registering user","error":"pq: invalid input value for enum gender: \"mali\""}
+{"time":"2024-08-10T14:39:48.023508814+05:00","level":"ERROR","msg":"Error in AuthService.Register","error":"pq: invalid input value for enum gender: \"mali\""}
+{"time":"2024-08-10T14:39:59.165681534+05:00","level":"ERROR","msg":"Error registering user","error":"pq: invalid input value for enum gender: \"mail\""}
+{"time":"2024-08-10T14:39:59.165706704+05:00","level":"ERROR","msg":"Error in AuthService.Register","error":"pq: invalid input value for enum gender: \"mail\""}
+{"time":"2024-08-10T14:40:45.84243271+05:00","level":"ERROR","msg":"Error login user","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:40:45.842491113+05:00","level":"ERROR","msg":"Error in AuthService.Login","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:41:07.097070443+05:00","level":"ERROR","msg":"Error login user","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:41:07.097128245+05:00","level":"ERROR","msg":"Error in AuthService.Login","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:42:44.221286408+05:00","level":"ERROR","msg":"Error login user","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T14:42:44.221488555+05:00","level":"ERROR","msg":"Error in AuthService.Login","error":"must pass a pointer, not a value, to StructScan destination"}
+{"time":"2024-08-10T22:43:37.182927839+05:00","level":"INFO","msg":"gRPC server listening on :50050"}
+{"time":"2024-08-11T12:00:36.231464244+05:00","level":"ERROR","msg":"Claims not found"}
+{"time":"2024-08-11T12:02:07.209996602+05:00","level":"ERROR","msg":"Claims not found"}
+{"time":"2024-08-11T12:02:58.063970041+05:00","level":"ERROR","msg":"Claims not found"}
+{"time":"2024-08-11T12:05:59.927139917+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-08-11T12:07:10.224482389+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-08-11T12:11:40.252237271+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-08-11T12:13:03.288774347+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-08-11T12:14:25.28486938+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-08-11T12:39:22.559722555+05:00","level":"ERROR","msg":"strconv error","error":"strconv.Atoi: parsing \"\": invalid syntax"}
+{"time":"2024-08-11T12:40:21.261852374+05:00","level":"ERROR","msg":"strconv error limit","error":"strconv.Atoi: parsing \"\": invalid syntax"}
+{"time":"2024-08-11T12:42:42.820142414+05:00","level":"ERROR","msg":"GetAllUsers error","error":"rpc error: code = Unknown desc = sql: converting argument $1 type: unsupported type []interface {}, a slice of interface"}
+{"time":"2024-08-11T12:44:33.804861757+05:00","level":"ERROR","msg":"GetAllUsers error","error":"rpc error: code = Unknown desc = sql: converting argument $1 type: unsupported type []interface {}, a slice of interface"}
+{"time":"2024-08-11T12:44:43.715000585+05:00","level":"ERROR","msg":"GetAllUsers error","error":"rpc error: code = Unknown desc = sql: converting argument $1 type: unsupported type []interface {}, a slice of interface"}
+{"time":"2024-08-11T12:45:07.20349581+05:00","level":"ERROR","msg":"GetAllUsers error","error":"rpc error: code = Unknown desc = sql: converting argument $1 type: unsupported type []interface {}, a slice of interface"}
+{"time":"2024-08-11T12:54:05.425535437+05:00","level":"ERROR","msg":"GetAllUsers error","error":"rpc error: code = Unknown desc = sql: converting argument $1 type: unsupported type []interface {}, a slice of interface"}
+{"time":"2024-08-11T12:55:26.985198996+05:00","level":"ERROR","msg":"GetAllUsers error","error":"rpc error: code = Unknown desc = sql: converting argument $1 type: unsupported type []interface {}, a slice of interface"}
+{"time":"2024-08-11T12:58:54.545560349+05:00","level":"ERROR","msg":"CreateUser error","error":"rpc error: code = Unknown desc = pq: duplicate key value violates unique constraint \"users_email_key\""}
+{"time":"2024-08-11T13:11:31.043411481+05:00","level":"INFO","msg":"connected to user service to port -> ","!BADKEY":":50050"}
+{"time":"2024-08-11T13:13:43.981063807+05:00","level":"INFO","msg":"connected to user service to port -> ","!BADKEY":"localhost:50050"}
+{"time":"2024-08-12T17:12:45.889286788+05:00","level":"ERROR","msg":"Error binding json: ","error":"rpc error: code = Unknown desc = mongo: no documents in result"}
+{"time":"2024-08-12T17:15:21.910215425+05:00","level":"ERROR","msg":"Error binding json: ","error":"rpc error: code = Unknown desc = mongo: no documents in result"}
+{"time":"2024-08-12T17:21:37.958402392+05:00","level":"ERROR","msg":"Error binding json: ","error":"rpc error: code = Unknown desc = medical record with ID string not found"}
+{"time":"2024-08-12T23:47:00.340509413+05:00","level":"ERROR","msg":"Error while calling GetRealtimeHealthMonitoring:","error":"rpc error: code = Unknown desc = mongo: no documents in result"}
+{"time":"2024-08-12T23:47:27.150867959+05:00","level":"ERROR","msg":"Error while calling GetRealtimeHealthMonitoring:","error":"rpc error: code = Unknown desc = mongo: no documents in result"}
+{"time":"2024-08-13T13:55:01.951587448+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:55:01.951791179+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:57:31.809388577+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:57:31.809506381+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:59:13.700928385+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:59:13.701036108+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:59:46.554891986+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T13:59:46.554976024+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:00:46.838379954+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:00:46.838574905+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:02:05.359063024+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:02:05.359173121+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:03:58.119828167+05:00","level":"ERROR","msg":"Error creating Casbin enforcer","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:03:58.119981994+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"open casbin/model.conf: no such file or directory"}
+{"time":"2024-08-13T14:44:44.026835309+05:00","level":"ERROR","msg":"Error while calling GetRealtimeHealthMonitoring:","error":"rpc error: code = Unknown desc = results argument must be a pointer to a slice, but was a pointer to ptr"}
+{"time":"2024-08-13T14:45:01.43158378+05:00","level":"ERROR","msg":"Error while calling GetRealtimeHealthMonitoring:","error":"rpc error: code = Unknown desc = results argument must be a pointer to a slice, but was a pointer to ptr"}
+{"time":"2024-08-14T12:07:49.747884754+05:00","level":"ERROR","msg":"error in GetAllLifestyleData","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:50051: connect: connection refused\""}
+{"time":"2024-08-14T18:16:32.482763098+05:00","level":"ERROR","msg":"Error creating Casbin adapter","error":"dial tcp: lookup postgres on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:16:32.482939462+05:00","level":"ERROR","msg":"error in creating casbin enforce","error":"dial tcp: lookup postgres on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:16:32.483523326+05:00","level":"ERROR","msg":"Error to connect rabbit","error":"dial tcp: lookup rabbit on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:26:47.734184852+05:00","level":"ERROR","msg":"error in GetLifestyleData","error":"rpc error: code = Unknown desc = mongo: no documents in result"}
+{"time":"2024-08-14T18:27:46.2154941+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unavailable desc = dns: A record lookup error: lookup postgres on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:28:20.195299836+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unavailable desc = dns: A record lookup error: lookup postgres on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:29:00.566646481+05:00","level":"ERROR","msg":"GetUserProfile error","error":"rpc error: code = Unavailable desc = dns: A record lookup error: lookup postgres on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:32:11.710929775+05:00","level":"ERROR","msg":"GetUserProfile error","error":"failed to exit idle mode: invalid target address :50050:50050, error info: address :50050:50050:443: too many colons in address"}
+{"time":"2024-08-14T18:55:30.399684349+05:00","level":"ERROR","msg":"Error to connect rabbit","error":"dial tcp: lookup rabbit on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-08-14T18:55:55.32276865+05:00","level":"ERROR","msg":"Error to connect rabbit","error":"dial tcp: lookup rabbit on 127.0.0.53:53: server misbehaving"}
