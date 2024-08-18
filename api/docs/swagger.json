@@ -8,7 +8,6 @@
         "contact": {},
         "version": "1.0"
     },
-    "host": "localhost:8080",
     "paths": {
         "/api/health-recommendations": {
             "get": {
@@ -1191,6 +1190,9 @@
                 "doctorId": {
                     "type": "string"
                 },
+                "id": {
+                    "type": "string"
+                },
                 "recordDate": {
                     "type": "string"
                 },
@@ -1517,7 +1519,7 @@
         "healthAnalytics.WearableDataResponse": {
             "type": "object",
             "properties": {
-                "createAt": {
+                "createdAt": {
                     "type": "string"
                 },
                 "dataType": {
@@ -1535,7 +1537,7 @@
                 "recordedTime": {
                     "type": "string"
                 },
-                "updateAt": {
+                "updatedAt": {
                     "type": "string"
                 },
                 "userId": {

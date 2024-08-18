@@ -9,6 +9,8 @@ definitions:
         type: string
       doctorId:
         type: string
+      id:
+        type: string
       recordDate:
         type: string
       recordType:
@@ -220,7 +222,7 @@ definitions:
     type: object
   healthAnalytics.WearableDataResponse:
     properties:
-      createAt:
+      createdAt:
         type: string
       dataType:
         type: string
@@ -232,7 +234,7 @@ definitions:
         type: string
       recordedTime:
         type: string
-      updateAt:
+      updatedAt:
         type: string
       userId:
         type: string
@@ -336,7 +338,6 @@ definitions:
       lastName:
         type: string
     type: object
-host: localhost:8080
 info:
   contact: {}
   title: API-Gateway service

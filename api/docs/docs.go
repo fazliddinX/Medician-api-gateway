@@ -1196,6 +1196,9 @@ const docTemplate = `{
                 "doctorId": {
                     "type": "string"
                 },
+                "id": {
+                    "type": "string"
+                },
                 "recordDate": {
                     "type": "string"
                 },
@@ -1522,7 +1525,7 @@ const docTemplate = `{
         "healthAnalytics.WearableDataResponse": {
             "type": "object",
             "properties": {
-                "createAt": {
+                "createdAt": {
                     "type": "string"
                 },
                 "dataType": {
@@ -1540,7 +1543,7 @@ const docTemplate = `{
                 "recordedTime": {
                     "type": "string"
                 },
-                "updateAt": {
+                "updatedAt": {
                     "type": "string"
                 },
                 "userId": {
@@ -1707,7 +1710,7 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "localhost:8080",
+	Host:             "",
 	BasePath:         "",
 	Schemes:          []string{"http"},
 	Title:            "API-Gateway service",

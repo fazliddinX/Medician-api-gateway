@@ -32,7 +32,6 @@ type routerImpl struct {
 
 // @title API-Gateway service
 // @version 1.0
-// @host localhost:8080
 // @schemes http
 func (r *routerImpl) InitRouter(queues queue.Queues, enforce *casbin.Enforcer, st storage.Storage) {
 	r.router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
